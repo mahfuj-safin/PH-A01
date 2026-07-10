@@ -13,6 +13,7 @@ body {
   --black-color: #000000;
   --SilverGray-color: #cac9c9;
   --darkblue-color: #122c81;
+  --lightgray-color: #e5e5e5;
 }
 .common-btn {
   text-decoration: none;
@@ -70,6 +71,8 @@ header {
 
 /* hero section style */
 .hero {
+  position: relative;
+
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -118,4 +121,62 @@ header {
 }
 .hero-content button:hover {
   background-color: var(--darkblue-color);
+}
+
+/* speakers section style */
+.speakers {
+  padding: 80px 0;
+}
+.speaker-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.speakers h2 {
+  font-size: 52px;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+.speaker-card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.speaker-card {
+  border: 2px solid var(--lightgray-color);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--white-color);
+  transition: 0.5s;
+}
+.speaker-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+.speaker-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+.speaker-info {
+  padding: 18px;
+}
+.speaker-info span {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--blue-color);
+  margin-bottom: 10px;
+}
+.speaker-info h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--black-color);
+}
+.speaker-info p {
+  font-size: 15px;
+  color: var(--darkish-color);
+  line-height: 2;
 }
