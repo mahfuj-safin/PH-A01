@@ -11,6 +11,8 @@ body {
   --white-color: #fff;
   --blue-color: #1d4ed8;
   --black-color: #000000;
+  --SilverGray-color: #cac9c9;
+  --darkblue-color: #122c81;
 }
 .common-btn {
   text-decoration: none;
@@ -18,6 +20,8 @@ body {
   color: var(--white-color);
   padding: 12px 24px;
   border-radius: 10px;
+  border: none;
+  cursor: pointer;
 }
 header {
   background-color: var(--white-color);
@@ -61,5 +65,57 @@ header {
   transition: 0.5s;
 }
 .btn:hover {
-  background-color: var(--black-color);
+  background-color: var(--darkblue-color);
+}
+
+/* hero section style */
+.hero {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  width: 100%;
+  height: 800px;
+
+  background-image: url(./assets/banner.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+/* overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: 900px;
+  color: var(--white-color);
+}
+.hero-content h1 {
+  font-size: 70px;
+  font-weight: 800;
+  margin-bottom: 50px;
+}
+.hero-content p {
+  width: 700px;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--SilverGray-color);
+}
+.hero-content button {
+  margin-top: 200px;
+  width: 220px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+.hero-content button:hover {
+  background-color: var(--darkblue-color);
 }
