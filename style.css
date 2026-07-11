@@ -39,7 +39,7 @@ header {
   margin: 0 auto;
   padding: 20px;
 }
-.logo-png {
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -521,8 +521,6 @@ header {
   border-top: 1px solid var(--darkish-color);
   margin-bottom: 28px;
 }
-
-/* Bottom */
 
 .footer-bottom {
   display: flex;
